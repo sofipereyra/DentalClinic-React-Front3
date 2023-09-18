@@ -1,69 +1,59 @@
-# ctd-fe3-final
+# CTD-Frontend3-final
 
-Examen Final de Frontend III
+Frontend III Final Exam. Dental Clinic.
 
-## Indice
+## Index
 
-- [Requisitos](#requisitos)
-  - [Condiciones mínimas de aprobación](#condiciones-mínimas-de-aprobación)
-  - [Aspectos que modifican la valoración final de la nota](#aspectos-que-modifican-la-valoración-final-de-la-nota)
-- [Funcionalidades](#funcionalidades)
-- [Desarrollo](#desarrollo)
+- [Approval conditions](#approval-conditions)
+- [Aspects that modify the final assessment of the grade](#aspects-that-modify-the-final-assessment-of-the-grade)
+- [Features](#features)
+- [Development](#development)
 - [API](#api)
-- [Entrega](#entrega)
-  - [Fecha de Entrega](#fecha-de-entrega)
-  - [Formato de Entrega](#formato-de-entrega)
 
-## Requisitos
+### Approval conditions
 
-Es indispensable clonar este proyecto en un repositorio privado, para poder trabajar de forma _individual_ o en _dupla_. No se aceptarán proyectos que se hayan realizado sin partir de un template. 
+The following conditions are minimum requirements necessary for approval of the final:
 
+- **Comply with all mandatory functionalities**
+- Only the libraries detailed in this README can be used. See [Dependencies](docs/desarrollo.md#dependencias)
+- Any functionality that is implemented using a library other than those allowed will not be considered carried out.
+- It must be developed using Javascript with React.js as a library.
+- The Contact page is expected to contain the necessary validation flows (minimum 2 validations) for a correct form submission.
+- In cases where it is required to give styles to components, it must be done taking into account the theme of the global context.
 
-### Condiciones de aprobación
+### Aspects that modify the final assessment of the grade
 
-Las siguientes condiciones son requisitos mínimos necesarios para la aprobación del final:
+The following aspects are extras to the minimum approval requirement that will be taken into account to increase the final grade, as long as their implementation is correct:
 
-- **Cumplir con todas las funcionalidades obligatorias**
-- Solo se podrán utilizar las librerías que se detallan en este README. Ver [Dependencias](docs/desarrollo.md#dependencias)
-- No se considerará realizada cualquier funcionalidad que sea implementada utilizando una librería distinta a las permitidas.
-- Deberá ser desarrollada utilizando Javascript con React.js como libreria.
-- Se espera que la página de Contacto, contenga los flujos de validación necesarios (minimo 2 validaciones), para un correcto submit del formulario.
-- En los casos en que se requiera dar estilos a componentes, deberá realizarse teniendo en cuenta el theme del contexto global.
+**Validations**
 
-### Aspectos que modifican la valoración final de la nota
+- A validation for each field is sufficient, they can be "manual" or with regular expressions. The important thing is the correct handling of errors and submit.
 
-Los siguientes aspectos son extras al requisito mínimo de aprobación que serán tenidos en cuenta para aumentar la nota final, siempre y cuando su implementación sea correcta:
+**Featured functionality**
 
-**Validaciones**
+- Extra functionalities will be valued for this feature, such as deleting highlights, error handling when trying to add repeats and total reset of highlights.
 
-- Una validación para cada campor es suficiente, pueden ser "manuales" o con expreciones regulares. Lo importante es el correcto manejo de errores y submit.
+**Styles**
 
-**Funcionalidad de destacados**
+- The style of other sections of the App will be assessed (outside the mandatory style of the routes based on the theme)
 
-- Se valorará funcionalidades extra a esta feature, como lo pueden ser el eliminar de destacadados, manejo de errores al intentar agregar repetidos y reseteo total de los destacados.
+**Good practices**
 
+- Special attention will be paid to the use of good practices, performance improvements (implementing useMemo) and code reuse
 
-**Estilos**
+## Features
 
-- Se valorará el estilado de demas apartados de la App (por fuera del estilado obligatorio de las rutas en base al theme)
+See [Funcionalidades](docs/funcionalidades.md).
 
-**Buenas Prácticas**
+## Development
 
-- Se prestará especial atención al uso de buenas prácticas, mejoras de performance (implementando useMemo) y la reutilizacion de codigo
-
-## Funcionalidades
-
-Ver [Funcionalidades](docs/funcionalidades.md).
-
-## Desarrollo
-
-Ver [Desarrollo](docs/desarrollo.md).
+See [Development](docs/desarrollo.md).
 
 ## API
 
-La API a utilizar sera la siguiente:
+The API to use will be the following: 
 `https://jsonplaceholder.typicode.com/users`
 
-Y para cada dentista en especifico:
+For each specific dentist: 
 `https://jsonplaceholder.typicode.com/users/:id`
 
