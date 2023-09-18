@@ -19,7 +19,7 @@ h1 {
 
 nav {
 	background-color: #dbe0e9;
-	padding: 16px;
+	padding: 6px 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -56,7 +56,11 @@ button {
 button:hover {
 	color: #89b4e2; 
 }
-
+.theme-icon{
+	height: 45px;
+    width: 45px;
+    border-radius: 25px;
+}
 
 footer {
 	display: flex;
