@@ -43,11 +43,11 @@ The following aspects are extras to the minimum approval requirement that will b
 
 ## Features
 
-See [Funcionalidades](docs/funcionalidades.md).
+See [Funcionalidades](docs/features.md).
 
 ## Development
 
-See [Development](docs/desarrollo.md).
+See [Development](docs/development.md).
 
 ## API
 
