@@ -41,6 +41,7 @@ a {
 	color: #6b98e1;
 	font-weight: bold;
 	transition: color 0.3s ease-in-out;
+	text-align: center;
 }
 a:hover {
 	color: #79aee6;
@@ -195,7 +196,7 @@ input[type="text"] {
 .card p {
 	font-size: 1rem;
 	color: #979db9;
-	margin-top: -12px;
+	margin-top: -8px;
 }
 
 #favButton {

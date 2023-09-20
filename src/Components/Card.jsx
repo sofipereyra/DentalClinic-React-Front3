@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "./utils/global.context";
 import user from "../img/user.png";
+import { Link } from "react-router-dom";
 
 const Card = ({ dentist}) => {
     const { state, dispatch } = useGlobalContext();
@@ -19,9 +20,11 @@ const Card = ({ dentist}) => {
     
     return (
         <div className="card">
-            <img id="user-logo" src={user} alt="User image" />
-            <h2>{dentist.name}</h2>
-            <p>User: {dentist.username}</p>
+            <Link to={`/detail/${dentist.id}`} key={dentist.id}>
+                <img id="user-logo" src={user} alt="User image" />
+                <h2>{dentist.name}</h2>
+                <p>User: {dentist.username}</p>
+            </Link>
             {isDentistInFavorites ? 
                     (<button onClick={removeFav} id="removeFavBtn">
                         Remove fav

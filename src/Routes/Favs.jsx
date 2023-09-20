@@ -11,9 +11,7 @@ const Favs = () => {
 			<h1>Dentists Favs</h1>
 			<div className="favs-container">
 				{state.favorites.map((dentist) => (
-					<Link to={`/detail/${dentist.id}`} key={dentist.id}>
-						<Card key={dentist.id} dentist={dentist}/>
-					</Link>
+					<Card key={dentist.id} dentist={dentist}/>
 				))}
 			</div>
 		</div>

@@ -27,9 +27,7 @@ const Home = () => {
 			<p>Cargando...</p>
 			) : data ? (
 			state.data.map((dentist) => (
-				<Link to={`/detail/${dentist.id}`} key={dentist.id}>
-					<Card key={dentist.id} dentist={dentist}></Card>
-				</Link>
+				<Card key={dentist.id} dentist={dentist}></Card>
 			))
 			) : null}
 		</div>
