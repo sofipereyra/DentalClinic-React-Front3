@@ -27,12 +27,11 @@ const Detail = () => {
 	return (
 		<div className={`details ${state.theme === "dark" ? "dark" : "light"}`}>
 			<div className='detail-container'>
-				<h1 className="detail-title">Detail Dentist { dentist.id }</h1>
+				<h1 className="detail-title">{ dentist.id } - { dentist.name }</h1>
 				<div className="detail-info">
-					<h2>{ dentist.name }</h2>
 					<p>Email: { dentist.email }</p>
-					<p>Telefono: { dentist.phone }</p>
-					<p>Sitio Web: { dentist.website }</p>
+					<p>Phone number: { dentist.phone }</p>
+					<p>Website: { dentist.website }</p>
 				</div>
 			</div>
 		</div>
