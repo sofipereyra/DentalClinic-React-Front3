@@ -16,6 +16,9 @@ const reducer = ( state, action ) => {
             return { ...state, data: action.payload };
         case "ADD_FAV":
             return { ...state, favorites: [...state.favorites, action.payload] };
+        case "REMOVE_FAV":
+            const newFavorites = state.favorites.filter(item => item.id !== action.payload.id);
+            return { ...state, favorites: newFavorites };
         default:
             return state;
     }

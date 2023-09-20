@@ -1,5 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "./utils/global.context";
+import user from "../img/user.png";
 
 const Card = ({ dentist}) => {
     const { state, dispatch } = useGlobalContext();
@@ -10,17 +11,24 @@ const Card = ({ dentist}) => {
             dispatch({ type: "ADD_FAV", payload: dentist});
         }
     };
+    const removeFav = ()=>{
+        if(isDentistInFavorites){
+            dispatch({ type: "REMOVE_FAV", payload: dentist});
+        }
+    };
     
     return (
         <div className="card">
-            <img src="./images/doctor.png" alt="" />
+            <img id="user-logo" src={user} alt="User image" />
             <h2>{dentist.name}</h2>
             <p>User: {dentist.username}</p>
-            {isDentistInFavorites ? (
-                <p className="favStatus">It's already in favorites</p>
+            {isDentistInFavorites ? 
+                    (<button onClick={removeFav} id="removeFavBtn">
+                        Remove fav
+                    </button>
                 ) : (
-                    <button onClick={addFavorites} className="favButton">
-                    Add fav
+                    <button onClick={addFavorites} id="favButton">
+                        Add fav
                     </button>
             )}
         </div>
