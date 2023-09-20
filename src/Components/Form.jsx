@@ -20,6 +20,8 @@ const Form = (e) => {
     }
     
     function handleChange(e){
+        setError("");
+        setSuccess("");
         const {name, value} = e.target;
         setUserData({...userData, [name]: value});
     }
