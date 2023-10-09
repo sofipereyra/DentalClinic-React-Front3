@@ -89,7 +89,14 @@ footer > p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 75vh;
+	height: 80vh;
+	padding-top: 40px;
+}
+.form-container h2{
+	font-size: 2rem;
+}
+.form-container p{
+	padding-inline: 8px;
 }
 form {
 	display: flex;
@@ -249,6 +256,9 @@ tr:nth-child(even) {
 	justify-content: center;
 	flex-wrap: wrap;
 	padding-bottom: 20px;
+	height: 75vh;
+	max-height: 770px;
+    overflow-y: auto;
 }
 
 .details{
