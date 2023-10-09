@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Card from '../Components/Card';
 import { useGlobalContext } from '../Components/utils/global.context';
 import useFetch from "../hooks/useFetch";
-import logo from "./../img/healthygums-logo.jpg"
 
 const Home = () => {
 	const { state, dispatch } = useGlobalContext();
@@ -21,7 +20,6 @@ const Home = () => {
 		<main className={`${state.theme === "dark" ? "dark" : "light"}`}>
 		<div className='logo-section'>
 			<div className='logo-container'>
-				
 			</div>
 		</div>
 		<div className="card-grid">
@@ -29,9 +27,7 @@ const Home = () => {
 			<p>Cargando...</p>
 			) : data ? (
 			state.data.map((dentist) => (
-				<Link to={`/detail/${dentist.id}`} key={dentist.id}>
-					<Card key={dentist.id} dentist={dentist}></Card>
-				</Link>
+				<Card key={dentist.id} dentist={dentist}></Card>
 			))
 			) : null}
 		</div>
